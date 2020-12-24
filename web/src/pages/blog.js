@@ -88,7 +88,7 @@ const BlogPage = props => {
           <BlogPostPreviewList
             title="Latest blog posts"
             nodes={postNodes}
-            browseMoreHref="/archive/"
+            browseMoreHref="/blog-archive/"
           />
         )}
       </Container>
