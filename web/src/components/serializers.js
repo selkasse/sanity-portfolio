@@ -1,9 +1,14 @@
-import Figure from './figure'
+/* eslint-disable semi */
+/* eslint-disable quotes */
+import React from "react";
+import Figure from "./figure";
 
 const serializers = {
   types: {
-    figure: Figure
+    figure: Figure,
+    authorReference: ({ node }) => <span>{node.author.name}</span>,
+    mainImage: Figure
   }
-}
+};
 
-export default serializers
+export default serializers;
